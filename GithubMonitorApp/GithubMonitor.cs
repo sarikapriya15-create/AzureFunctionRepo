@@ -36,7 +36,7 @@ namespace GithubMonitorApp
                 if(!string.IsNullOrEmpty(requestBody))
                 {
                     dynamic data = JsonSerializer.Deserialize<JsonElement>(requestBody);
-                    //name = name ?? data?.name;
+
                 }
 
                 _logger.LogInformation(requestBody);
